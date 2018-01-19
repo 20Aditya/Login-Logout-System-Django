@@ -1,0 +1,5 @@
+{% block content %}
+    {% csrf_token %}
+    <h2>{{ us }}-You are LOGGED OUT</h2>
+    <p>Click <a href="{% url 'Social:login' %}">login</a>to login again </p>
+{% endblock %}

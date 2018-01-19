@@ -1,0 +1,6 @@
+{% block content %}
+    {% csrf_token %}
+    <h2>Hi {{ name }} you are logged in!</h2>
+    <p>Click <a href="{% url 'Social:loggedout' %}"> here</a>to logout </p>
+    <p>Click <a href="{% url 'Social:loggedin' %}">profile</a>to edit your profile information</p>
+{% endblock %}

@@ -1,0 +1,5 @@
+{% block content %}
+    {% csrf_token %}
+    <h2>Your login details are invalid!</h2>
+    <p>Click <a href="{% url 'Social:login' %}">login</a>to try again </p>
+{% endblock %}
